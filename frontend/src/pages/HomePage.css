@@ -1,0 +1,251 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  min-width: 600px;
+  max-width: 800px;
+}
+
+.username-section {
+  width: 100%;
+}
+
+.username-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #2d2d2d;
+  color: white;
+}
+
+.username-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.btn-advanced {
+  padding: 0.75rem 1.5rem;
+  background: #2d2d2d;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.btn-advanced:hover {
+  background: #3d3d3d;
+}
+
+.advanced-options {
+  background: #252526;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #3e3e42;
+}
+
+.os-selection h3,
+.snapshot-selection h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.os-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.os-card {
+  padding: 1rem;
+  background: #2d2d2d;
+  border: 2px solid #3e3e42;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.os-card:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.os-card.selected {
+  border-color: #667eea;
+  background: #3d3d4d;
+  box-shadow: 0 0 15px rgba(102, 126, 234, 0.3);
+}
+
+.os-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.os-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.os-desc {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.snapshot-selection {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #3e3e42;
+}
+
+.snapshot-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.snapshot-card {
+  padding: 1rem;
+  background: #2d2d2d;
+  border: 2px solid #3e3e42;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.snapshot-card:hover {
+  border-color: #667eea;
+}
+
+.snapshot-card.selected {
+  border-color: #667eea;
+  background: #3d3d4d;
+  box-shadow: 0 0 15px rgba(102, 126, 234, 0.3);
+}
+
+.snapshot-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.snapshot-desc {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: #444;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #555;
+}
+
+.join-section {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.join-section input {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #2d2d2d;
+  color: white;
+}
+
+.join-section input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.feature {
+  padding: 1.5rem;
+  background: #2d2d2d;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.feature h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.feature p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
